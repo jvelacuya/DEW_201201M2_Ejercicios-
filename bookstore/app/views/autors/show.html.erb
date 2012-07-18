@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Autor:</b>
+  <%= @autor.name %>
+</p>
+
+
+<%= link_to 'Editar', edit_autor_path(@autor) %> |
+<%= link_to 'Regresar', autors_path %>

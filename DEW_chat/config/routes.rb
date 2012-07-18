@@ -1,17 +1,7 @@
-Bookstore::Application.routes.draw do
-  resources :autors
+DEWChat::Application.routes.draw do
 
-  resources :users do
-	member do
-		get "add_book"
-	end
-  end
-  
-  resources :user_books
-
-  resources :people_books
-
-  resources :books
+  root :to => "messages#index"
+  resources :messages
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

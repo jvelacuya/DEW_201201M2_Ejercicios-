@@ -1,0 +1,17 @@
+<%= simple_form_for(@autor) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+	  <table>
+		<tr>
+			<td><b>Autor:</b></td>
+			<td><%= f.input :name %></td>
+		</tr>
+	  </table>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+<h1>Listado Autores</h1>
+
+<table>
+  <tr>
+    <th>Autor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @autors.each do |autor| %>
+  <tr>
+    <td><%= autor.name %></td>
+    <td><%= link_to 'Ver', autor %></td>
+    <td><%= link_to 'Editar', edit_autor_path(autor) %></td>
+    <td><%= link_to 'Eliminar', autor, confirm: 'Desea eliminar ' + autor.name + ' ?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo Autor', new_autor_path %>
