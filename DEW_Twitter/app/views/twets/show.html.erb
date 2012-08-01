@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @twet.user %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @twet.message %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @twet.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_twet_path(@twet) %> |
+<%= link_to 'Back', twets_path %>

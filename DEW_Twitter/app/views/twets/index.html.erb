@@ -1,0 +1,45 @@
+<h1>Tweet</h1>
+
+<%= form_for(@twet, :url=>"user") do |f| %>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Mostrar mensaje" %>
+  </div>
+ <% end %>
+ 
+ <%= form_for(@twet, :url=>"update") do |f| %>
+  <div class="field">
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update mensaje" %>
+  </div>
+ <% end %>
+ 
+ <%= form_for(@twet, :url=>"read_text") do |f| %>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Buscar Tweet" %>
+  </div>
+ <% end %>
+ 
+  <%= form_for(@twet, :url=>"follows") do |f| %>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Follows" %>
+  </div>
+ <% end %>
